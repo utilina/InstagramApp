@@ -13,6 +13,12 @@
 		5BAB8E5B25B5C02800E174DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAB8E5925B5C02800E174DA /* Main.storyboard */; };
 		5BAB8E5D25B5C02C00E174DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BAB8E5C25B5C02C00E174DA /* Assets.xcassets */; };
 		5BAB8E6025B5C02C00E174DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BAB8E5E25B5C02C00E174DA /* LaunchScreen.storyboard */; };
+		5BAB8E7325B5C0FB00E174DA /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB8E7225B5C0FB00E174DA /* MainTabController.swift */; };
+		5BAB8E7C25B5C3EA00E174DA /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB8E7B25B5C3EA00E174DA /* FeedController.swift */; };
+		5BAB8E8825B5C51A00E174DA /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB8E8725B5C51A00E174DA /* ProfileController.swift */; };
+		5BAB8E8C25B5C54D00E174DA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB8E8B25B5C54D00E174DA /* NotificationController.swift */; };
+		5BAB8E8F25B5C57F00E174DA /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB8E8E25B5C57F00E174DA /* ImageSelectorController.swift */; };
+		5BAB8E9225B5C59D00E174DA /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB8E9125B5C59D00E174DA /* SearchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		5BAB8E5C25B5C02C00E174DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BAB8E5F25B5C02C00E174DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BAB8E6125B5C02C00E174DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BAB8E7225B5C0FB00E174DA /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		5BAB8E7B25B5C3EA00E174DA /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		5BAB8E8725B5C51A00E174DA /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		5BAB8E8B25B5C54D00E174DA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5BAB8E8E25B5C57F00E174DA /* ImageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorController.swift; sourceTree = "<group>"; };
+		5BAB8E9125B5C59D00E174DA /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,15 @@
 		5BAB8E5225B5C02800E174DA /* InstagramApp */ = {
 			isa = PBXGroup;
 			children = (
+				5BAB8E7025B5C08300E174DA /* Model */,
+				5BAB8E7A25B5C3AB00E174DA /* MainTab */,
+				5BAB8E7625B5C2DF00E174DA /* Feed */,
+				5BAB8E8225B5C42E00E174DA /* Profile */,
+				5BAB8E8125B5C41F00E174DA /* Notification */,
+				5BAB8E8025B5C41200E174DA /* ImageSelector */,
+				5BAB8E7F25B5C3F900E174DA /* Search */,
+				5BAB8E6A25B5C06800E174DA /* API */,
+				5BAB8E6825B5C04400E174DA /* Utils */,
 				5BAB8E5325B5C02800E174DA /* AppDelegate.swift */,
 				5BAB8E5525B5C02800E174DA /* SceneDelegate.swift */,
 				5BAB8E5725B5C02800E174DA /* ViewController.swift */,
@@ -65,6 +86,155 @@
 				5BAB8E6125B5C02C00E174DA /* Info.plist */,
 			);
 			path = InstagramApp;
+			sourceTree = "<group>";
+		};
+		5BAB8E6825B5C04400E174DA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5BAB8E6A25B5C06800E174DA /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5BAB8E6D25B5C07E00E174DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BAB8E7225B5C0FB00E174DA /* MainTabController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BAB8E6E25B5C07F00E174DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5BAB8E6F25B5C08100E174DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BAB8E7025B5C08300E174DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BAB8E7625B5C2DF00E174DA /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				5BAB8E7925B5C2FA00E174DA /* Controller */,
+				5BAB8E7825B5C2F200E174DA /* ViewModel */,
+				5BAB8E7725B5C2EA00E174DA /* View */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		5BAB8E7725B5C2EA00E174DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BAB8E7825B5C2F200E174DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5BAB8E7925B5C2FA00E174DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BAB8E7B25B5C3EA00E174DA /* FeedController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BAB8E7A25B5C3AB00E174DA /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				5BAB8E6E25B5C07F00E174DA /* ViewModel */,
+				5BAB8E6F25B5C08100E174DA /* View */,
+				5BAB8E6D25B5C07E00E174DA /* Controller */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		5BAB8E7F25B5C3F900E174DA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				5BAB8E8625B5C4B800E174DA /* Controller */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		5BAB8E8025B5C41200E174DA /* ImageSelector */ = {
+			isa = PBXGroup;
+			children = (
+				5BAB8E8525B5C4AC00E174DA /* Controller */,
+			);
+			path = ImageSelector;
+			sourceTree = "<group>";
+		};
+		5BAB8E8125B5C41F00E174DA /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				5BAB8E8425B5C4A600E174DA /* Controller */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		5BAB8E8225B5C42E00E174DA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5BAB8E8325B5C49600E174DA /* Controller */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5BAB8E8325B5C49600E174DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BAB8E8725B5C51A00E174DA /* ProfileController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BAB8E8425B5C4A600E174DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BAB8E8B25B5C54D00E174DA /* NotificationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BAB8E8525B5C4AC00E174DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BAB8E8E25B5C57F00E174DA /* ImageSelectorController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BAB8E8625B5C4B800E174DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BAB8E9125B5C59D00E174DA /* SearchController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +307,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BAB8E8F25B5C57F00E174DA /* ImageSelectorController.swift in Sources */,
 				5BAB8E5825B5C02800E174DA /* ViewController.swift in Sources */,
 				5BAB8E5425B5C02800E174DA /* AppDelegate.swift in Sources */,
+				5BAB8E7C25B5C3EA00E174DA /* FeedController.swift in Sources */,
+				5BAB8E8C25B5C54D00E174DA /* NotificationController.swift in Sources */,
+				5BAB8E7325B5C0FB00E174DA /* MainTabController.swift in Sources */,
 				5BAB8E5625B5C02800E174DA /* SceneDelegate.swift in Sources */,
+				5BAB8E9225B5C59D00E174DA /* SearchController.swift in Sources */,
+				5BAB8E8825B5C51A00E174DA /* ProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
