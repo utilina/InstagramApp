@@ -19,6 +19,8 @@
 		5BAB8E8C25B5C54D00E174DA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB8E8B25B5C54D00E174DA /* NotificationController.swift */; };
 		5BAB8E8F25B5C57F00E174DA /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB8E8E25B5C57F00E174DA /* ImageSelectorController.swift */; };
 		5BAB8E9225B5C59D00E174DA /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB8E9125B5C59D00E174DA /* SearchController.swift */; };
+		5BAB8E9525B5D9AA00E174DA /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB8E9425B5D9AA00E174DA /* FeedCell.swift */; };
+		5BE7DBC525B6CA8600BDDB6D /* Ext_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7DBC425B6CA8600BDDB6D /* Ext_UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		5BAB8E8B25B5C54D00E174DA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		5BAB8E8E25B5C57F00E174DA /* ImageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorController.swift; sourceTree = "<group>"; };
 		5BAB8E9125B5C59D00E174DA /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		5BAB8E9425B5D9AA00E174DA /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		5BE7DBC425B6CA8600BDDB6D /* Ext_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ext_UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 		5BAB8E6825B5C04400E174DA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				5BE7DBC425B6CA8600BDDB6D /* Ext_UIView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 		5BAB8E7725B5C2EA00E174DA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5BAB8E9425B5D9AA00E174DA /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -308,11 +314,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BAB8E8F25B5C57F00E174DA /* ImageSelectorController.swift in Sources */,
+				5BAB8E9525B5D9AA00E174DA /* FeedCell.swift in Sources */,
 				5BAB8E5825B5C02800E174DA /* ViewController.swift in Sources */,
 				5BAB8E5425B5C02800E174DA /* AppDelegate.swift in Sources */,
 				5BAB8E7C25B5C3EA00E174DA /* FeedController.swift in Sources */,
 				5BAB8E8C25B5C54D00E174DA /* NotificationController.swift in Sources */,
 				5BAB8E7325B5C0FB00E174DA /* MainTabController.swift in Sources */,
+				5BE7DBC525B6CA8600BDDB6D /* Ext_UIView.swift in Sources */,
 				5BAB8E5625B5C02800E174DA /* SceneDelegate.swift in Sources */,
 				5BAB8E9225B5C59D00E174DA /* SearchController.swift in Sources */,
 				5BAB8E8825B5C51A00E174DA /* ProfileController.swift in Sources */,
@@ -345,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -406,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
