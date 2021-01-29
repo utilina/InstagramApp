@@ -52,11 +52,48 @@ class FeedCell: UICollectionViewCell {
 
     private lazy var likeButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitleColor(.black, for: .normal)
-        button.setTitle("venom", for: .normal)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 13)
+        button.setImage(#imageLiteral(resourceName: "like_unselected"), for: .normal)
+        button.tintColor = .black
         button.addTarget(self, action: #selector(didTapUserName), for: .touchUpInside)
         return button
+    }()
+
+    private lazy var commentButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setImage(#imageLiteral(resourceName: "comment"), for: .normal)
+        button.tintColor = .black
+        button.addTarget(self, action: #selector(didTapUserName), for: .touchUpInside)
+        return button
+    }()
+
+    private lazy var shareButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setImage(#imageLiteral(resourceName: "send2"), for: .normal)
+        button.tintColor = .black
+        button.addTarget(self, action: #selector(didTapUserName), for: .touchUpInside)
+        return button
+    }()
+
+    private let likesLabel: UILabel = {
+        let label = UILabel()
+        label.text = "1 like"
+        label.font = UIFont.boldSystemFont(ofSize: 12)
+        return label
+    }()
+
+    private let captionLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Some test caption for now"
+        label.font = UIFont.boldSystemFont(ofSize: 12)
+        return label
+    }()
+
+    private let postTimeLabel: UILabel = {
+        let label = UILabel()
+        label.text = "2 days ago"
+        label.font = UIFont.boldSystemFont(ofSize: 12)
+        label.textColor = .lightGray
+        return label
     }()
 
 	// MARK: - Initialization
@@ -97,6 +134,18 @@ class FeedCell: UICollectionViewCell {
                                leftAnchor: profileImageView.rightAnchor,
                                paddingLeft: 8)
     }
+
+//    private func  userNameButtonConfig() {
+//        addSubview(userNameButton)
+//    }
+//
+//    private func  userNameButtonConfig() {
+//        addSubview(userNameButton)
+//    }
+//
+//    private func  userNameButtonConfig() {
+//        addSubview(userNameButton)
+//    }
 
     // MARK: - Actions
 
